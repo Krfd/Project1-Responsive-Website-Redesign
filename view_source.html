@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wikipedia | View Source</title>
+        <link rel="icon" type="icon" href="images/wikipedia.png" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap");
+            * {
+                font-family: "Poppins", sans-serif;
+            }
+            body {
+                scroll-behavior: smooth;
+            }
+        </style>
+    </head>
+    <body>
+        <header
+            class="py-5 px-4 w-full block md:flex lg:flex justify-between md:px-8 lg:px-16 items-center"
+        >
+            <div class="logo flex flex-initial bg-white shrink-0">
+                <a href="index.html"
+                    ><img
+                        src="images/wikipedia.png"
+                        alt="Logo"
+                        class="rounded-full object-cover w-16 h-16 shadow-md"
+                    />
+                </a>
+                <div class="ml-3">
+                    <h2 class="font-bold text-2xl">Wikipedia</h2>
+                    <p><i>The Free Encyclopedia</i></p>
+                </div>
+            </div>
+            <div
+                class="flex items-center w-9/12 lg:w-3/12 md:w-4/12 shrink-0 block lg:flex md:flex"
+            >
+                <label class="relative block w-full">
+                    <span class="sr-only">Search</span>
+                    <i
+                        class="absolute inset-y-0 left-0 flex items-center pl-2 fa-solid fa-magnifying-glass text-slate-500"
+                    ></i>
+                    <input
+                        class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md my-5 lg:py-2 md:py-2 py-1 pl-9 pr-3 hover:shadow-lg shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
+                        placeholder="Search wikipedia"
+                        type="text"
+                        name="search"
+                    />
+                </label>
+                <button
+                    type="button"
+                    class="rounded-md bg-white block bg-white border border-slate-300 font-bold rounded-md lg:py-2 md:py-2 py-1 ml-1 px-3 text-slate-500 shadow-sm hover:shadow-lg shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
+                >
+                    Search
+                </button>
+            </div>
+            <div
+                class="block lg:flex d:flex w-contain shrink-0 items-center gap-1"
+            >
+                <a
+                    href="create_account.html"
+                    class="link underline-offset-0 text-sm hover:text-blue-500 font-normal py-2 px-3 shadow-md rounded-lg bg-white"
+                    >Create account</a
+                >
+                <a
+                    href="login.html"
+                    class="link underline-offset-0 text-sm hover:text-blue-500 font-normal py-2 px-3 shadow-md rounded-lg bg-white"
+                    >Login</a
+                >
+            </div>
+        </header>
+        <br />
+        <div
+            class="w-9/12 block m-auto border-b-4 border-gray-500 flex justify-between text-sm font-normal"
+        >
+            <div class="py-1">
+                <h1 class="text-2xl font-semibold">
+                    View Source for Main Page
+                </h1>
+            </div>
+        </div>
+        <div
+            class="w-9/12 block m-auto border-b-4 border-gray-500 flex justify-between text-sm font-normal"
+        >
+            <div class="py-1 flex gap-3">
+                <a href="index.html" class="text-blue-500 hover:text-blue-500"
+                    >Main page</a
+                >
+                <a
+                    href="https://en.wikipedia.org/wiki/Talk:Main_Page"
+                    class="text-black-500 hover:text-blue-500"
+                    >Talk</a
+                >
+            </div>
+            <div class="py-1 flex gap-3">
+                <a href="index.html" class="text-black-500 hover:text-blue-500"
+                    >Read</a
+                >
+                <a
+                    href="view_source.html"
+                    class="text-blue-500 hover:text-blue-500"
+                    >View Source</a
+                >
+                <a
+                    href="view_history.html"
+                    class="text-black-500 hover:text-blue-500"
+                    >View History</a
+                >
+            </div>
+        </div>
+        <div
+            class="w-9/12 flex m-auto items-center text-purple-900 text-sm gap-1 mt-1"
+        >
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 hover:text-blue-500"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+                /></svg
+            ><a href="index.html" class="text-sm hover:text-blue-500"
+                >Main Page</a
+            >
+        </div>
+
+        <main class="w-9/12 block mx-auto my-3">
+            <section class="bg-slate-200 py-6">
+                <div
+                    class="w-9/12 px-6 border border-slate-300 mx-auto block py-3 bg-white my-3"
+                >
+                    <h3 class="text-lg text-center">
+                        This page is
+                        <span class="text-blue-500 font-semibold"
+                            >transcluded</span
+                        >
+                        in multiple
+                        <span class="text-blue-500 font-semibold"
+                            >cascaded-protected</span
+                        >
+                        pages, so only
+                        <span class="text-blue-500 font-semibold"
+                            >administrators</span
+                        >
+                        can edit it.
+                    </h3>
+                </div>
+                <div class="block mx-auto lg:flex lg:md:justify-between">
+                    <div class="block w-full lg:w-6/12 py-6 px-12">
+                        <h2 class="font-medium text-lg">
+                            Why is the page protected?
+                        </h2>
+                        <ul class="list-disc">
+                            <li>
+                                Cascading protection is used to prevent
+                                vandalism to particularly visible pages, such as
+                                the Main Page and a few very highly used
+                                templates.
+                            </li>
+                            <li>
+                                This page is transcluded in the following pages,
+                                which are protected with the "cascading" option:
+                            </li>
+                            <ul class="list-disc list-inside">
+                                <li>
+                                    <a
+                                        href="https://en.wikipedia.org/wiki/Wikipedia:Cascade-protected_items/Main_Page"
+                                        class="text-blue-500"
+                                        >Wikipedia:Cascade-protected items/Main
+                                        Page</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://en.wikipedia.org/wiki/Wikipedia:Cascade-protected_items/Main_Page/2"
+                                        class="text-blue-500"
+                                        >Wikipedia:Cascade-protected items/Main
+                                        Page/2</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://en.wikipedia.org/wiki/Wikipedia:Cascade-protected_items/Main_Page/3"
+                                        class="text-blue-500"
+                                        >Wikipedia:Cascade-protected items/Main
+                                        Page/5</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://en.wikipedia.org/wiki/Wikipedia:Cascade-protected_items/Main_Page/4"
+                                        class="text-blue-500"
+                                        >Wikipedia:Cascade-protected items/Main
+                                        Page/4</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://en.wikipedia.org/wiki/Wikipedia:Cascade-protected_items/Main_Page/5"
+                                        class="text-blue-500"
+                                        >Wikipedia:Cascade-protected items/Main
+                                        Page/5</a
+                                    >
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="block w-full lg:w-6/12 py-6 px-12">
+                        <h2 class="font-medium text-lg">What can I do?</h2>
+                        <ul class="list-disc">
+                            <li>
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Wikipedia:Why_create_an_account%3F"
+                                    class="text-blue-500"
+                                    >Register for an account</a
+                                >
+                                if you don't already have one
+                            </li>
+                            <li>
+                                Visit the
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Wikipedia:Sandbox"
+                                    class="text-blue-500"
+                                    >Sandbox</a
+                                >
+                                to make test edits
+                            </li>
+                            <li>
+                                Check out the
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Wikipedia:Tutorial"
+                                    class="text-blue-500"
+                                    >Tutorial</a
+                                >
+                                to learn more about editing
+                            </li>
+                            <li>
+                                <a href="index.html" class="text-blue-500"
+                                    >Report errors on the Main Page</a
+                                >
+                            </li>
+                            <li>
+                                If you wrote any text, please save it
+                                temporarily to your device until you can edit
+                                this page.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <br />
+        <footer
+            class="border-t-4 border-gray-500 lg:mx-16 md:mx-8 mx-4 pt-2 pb-6 md:pb-12 justify-start lg:flex md:flex lg:gap-5 md:gap-5 gap-3 text-sm text-blue-500 block grid grid-cols-3"
+        >
+            <p>
+                <a
+                    href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy"
+                    class="hover:text-blue-800"
+                    >Privacy policy</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://en.wikipedia.org/wiki/Wikipedia:About"
+                    class="hover:text-blue-800"
+                    >About</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer"
+                    class="hover:text-blue-800"
+                    >Disclaimers</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us"
+                    class="hover:text-blue-800"
+                    >Contact</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Universal_Code_of_Conduct"
+                    class="hover:text-blue-800"
+                    >Code of Conduct</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://developer.wikimedia.org/"
+                    class="hover:text-blue-800"
+                    >Developers</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement"
+                    class="hover:text-blue-800"
+                    >Cookies</a
+                >
+            </p>
+        </footer>
+    </body>
+</html>

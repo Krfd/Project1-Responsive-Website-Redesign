@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wikipedia | View History</title>
+        <link rel="icon" type="icon" href="images/wikipedia.png" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap");
+            * {
+                font-family: "Poppins", sans-serif;
+            }
+            body {
+                scroll-behavior: smooth;
+            }
+        </style>
+    </head>
+    <body>
+        <header
+            class="py-5 px-4 w-full block md:flex lg:flex justify-between md:px-8 lg:px-16 items-center"
+        >
+            <div class="logo flex flex-initial bg-white shrink-0">
+                <a href="index.html"
+                    ><img
+                        src="images/wikipedia.png"
+                        alt="Logo"
+                        class="rounded-full object-cover w-16 h-16 shadow-md"
+                    />
+                </a>
+                <div class="ml-3">
+                    <h2 class="font-bold text-2xl">Wikipedia</h2>
+                    <p><i>The Free Encyclopedia</i></p>
+                </div>
+            </div>
+            <div
+                class="flex items-center w-9/12 lg:w-3/12 md:w-4/12 shrink-0 block lg:flex md:flex"
+            >
+                <label class="relative block w-full">
+                    <span class="sr-only">Search</span>
+                    <i
+                        class="absolute inset-y-0 left-0 flex items-center pl-2 fa-solid fa-magnifying-glass text-slate-500"
+                    ></i>
+                    <input
+                        class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md my-5 lg:py-2 md:py-2 py-1 pl-9 pr-3 hover:shadow-lg shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
+                        placeholder="Search wikipedia"
+                        type="text"
+                        name="search"
+                    />
+                </label>
+                <button
+                    type="button"
+                    class="rounded-md bg-white block bg-white border border-slate-300 font-bold rounded-md lg:py-2 md:py-2 py-1 ml-1 px-3 text-slate-500 shadow-sm hover:shadow-lg shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
+                >
+                    Search
+                </button>
+            </div>
+            <div
+                class="block lg:flex d:flex w-contain shrink-0 items-center gap-1"
+            >
+                <a
+                    href="create_account.html"
+                    class="link underline-offset-0 text-sm hover:text-blue-500 font-normal py-2 px-3 shadow-md rounded-lg bg-white"
+                    >Create account</a
+                >
+                <a
+                    href="login.html"
+                    class="link underline-offset-0 text-sm hover:text-blue-500 font-normal py-2 px-3 shadow-md rounded-lg bg-white"
+                    >Login</a
+                >
+            </div>
+        </header>
+        <br />
+        <div
+            class="w-9/12 block m-auto border-b-4 border-gray-500 flex justify-between text-sm font-normal"
+        >
+            <div class="py-1">
+                <h1 class="text-2xl font-semibold">
+                    View Source for Main Page
+                </h1>
+            </div>
+        </div>
+        <div
+            class="w-9/12 block m-auto border-b-4 border-gray-500 flex justify-between text-sm font-normal"
+        >
+            <div class="py-1 flex gap-3">
+                <a href="index.html" class="text-blue-500 hover:text-blue-500"
+                    >Main page</a
+                >
+                <a
+                    href="https://en.wikipedia.org/wiki/Talk:Main_Page"
+                    class="text-black-500 hover:text-blue-500"
+                    >Talk</a
+                >
+            </div>
+            <div class="py-1 flex gap-3">
+                <a href="index.html" class="text-black-500 hover:text-blue-500"
+                    >Read</a
+                >
+                <a
+                    href="view_source.html"
+                    class="text-black-500 hover:text-blue-500"
+                    >View Source</a
+                >
+                <a
+                    href="https://en.wikipedia.org/w/index.php?title=Main_Page&action=history"
+                    class="text-blue-500 hover:text-blue-500"
+                    >View History</a
+                >
+            </div>
+        </div>
+        <div
+            class="w-9/12 border flex m-auto items-center gap-1 mt-1 p-4 rounded-sm"
+        >
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6 animate-bounce"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                />
+            </svg>
+            <h3>Filter Revisions</h3>
+        </div>
+        <main class="w-9/12 block mx-auto my-3 shadow-lg bg-slate-100">
+            <section class="p-6">
+                <div class="block m-auto mt-1 rounded-sm">
+                    <p class="border-b-2 border-solid border-slate-500">
+                        External tools:
+                        <a
+                            href="http://wikipedia.ramselehof.de/wikiblame.php?lang=en&article=Main_Page"
+                            class="text-blue-500"
+                            >• Find addition/removal</a
+                        >
+                        <a
+                            href="https://sigma.toolforge.org/usersearch.py?page=Main_Page&server=enwiki"
+                            class="text-blue-500"
+                            >• Find edits by user</a
+                        >
+                        <a
+                            href="https://xtools.wmcloud.org/articleinfo/en.wikipedia.org/Main_Page"
+                            class="text-blue-500"
+                            >• Page statistics</a
+                        >
+                        <a
+                            href="https://pageviews.wmcloud.org/?pages=Main_Page&project=en.wikipedia.org"
+                            class="text-blue-500"
+                            >• Pageviews</a
+                        >
+                        <a
+                            href="https://iabot.toolforge.org/index.php?page=runbotsingle&pagesearch=Main_Page&wiki=enwiki"
+                            class="text-blue-500"
+                            >• Fix dead links</a
+                        >
+                    </p>
+                </div>
+                <div class="block m-auto rounded-sm my-4">
+                    <p>
+                        For any version listed below, click on its date to view
+                        it. For more help, see Help:Page history and Help:Edit
+                        summary. (cur) = difference from current version, (prev)
+                        = difference from preceding version, m = minor edit, → =
+                        section edit, ← = automatic edit summary (newest |
+                        oldest) View (newer 50 | older 50) (20 | 50 | 100 | 250
+                        | 500)
+                    </p>
+                </div>
+                <button
+                    class="block text-sm font-semibold text-center border p-3"
+                >
+                    Compare Selected Revisions
+                </button>
+                <div class="block my-2">
+                    <ul class="list-disc list-inside">
+                        <li>
+                            curprev 19:27, 5 October 2022 The Blade of the
+                            Northern Lights talk contribs 2,987 bytes 0 Same
+                            issue, commented out text accidentally got split
+                            into two lines of markup
+                        </li>
+                        <li>
+                            curprev 22:07, 4 October 2022 The Blade of the
+                            Northern Lights talk contribs 2,987 bytes 0 Fix
+                            commented out text that for some reason was on a
+                            different line from the opening markup
+                        </li>
+                        <li>
+                            curprev 13:05, 2 September 2022 Xaosflux talk
+                            contribs 2,987 bytes +23 +noinclude
+                        </li>
+                        <li>
+                            curprev 15:39, 26 August 2022 Xaosflux talk contribs
+                            2,964 bytes +48 reset the SHORTDESC
+                        </li>
+                        <li>
+                            curprev 15:38, 26 August 2022 Xaosflux talk contribs
+                            2,916 bytes -48 attempt to reset broken short dedesc
+                        </li>
+                        <li>
+                            curprev 15:25, 17 June 2022 Cyberpower678 talk
+                            contribs 2,964 bytes +3 Undid revision 1093586636 by
+                            Cyberpower678
+                        </li>
+                        <li>
+                            curprev 15:25, 17 June 2022 Cyberpower678 talk
+                            contribs m 2,961 bytes -3 Reverted edits by Izno
+                        </li>
+                        <li>
+                            curprev 01:18, 14 June 2022 Izno talk contribs 2,964
+                            bytes +130
+                        </li>
+                        <li>
+                            curprev 18:07, 12 June 2022 Izno talk contribs 2,834
+                            bytes -127
+                        </li>
+                        <li>
+                            curprev 21:25, 28 April 2022 Xaosflux talk contribs
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <br />
+        <footer
+            class="border-t-4 border-gray-500 lg:mx-16 md:mx-8 mx-4 pt-2 pb-6 md:pb-12 justify-start lg:flex md:flex lg:gap-5 md:gap-5 gap-3 text-sm text-blue-500 block grid grid-cols-3"
+        >
+            <p>
+                <a
+                    href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy"
+                    class="hover:text-blue-800"
+                    >Privacy policy</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://en.wikipedia.org/wiki/Wikipedia:About"
+                    class="hover:text-blue-800"
+                    >About</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer"
+                    class="hover:text-blue-800"
+                    >Disclaimers</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us"
+                    class="hover:text-blue-800"
+                    >Contact</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Universal_Code_of_Conduct"
+                    class="hover:text-blue-800"
+                    >Code of Conduct</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://developer.wikimedia.org/"
+                    class="hover:text-blue-800"
+                    >Developers</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement"
+                    class="hover:text-blue-800"
+                    >Cookies</a
+                >
+            </p>
+        </footer>
+    </body>
+</html>

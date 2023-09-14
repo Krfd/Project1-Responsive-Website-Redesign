@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Wikipedia</title>
+        <link rel="icon" type="icon" href="images/wikipedia.png" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap");
+            * {
+                font-family: "Poppins", sans-serif;
+            }
+            body {
+                scroll-behavior: smooth;
+            }
+        </style>
+    </head>
+    <body>
+        <header
+            class="py-5 px-4 w-full block md:flex lg:flex justify-between md:px-8 lg:px-16 items-center"
+        >
+            <div class="logo flex flex-initial bg-white shrink-0">
+                <a href="index.html"
+                    ><img
+                        src="images/wikipedia.png"
+                        alt="Logo"
+                        class="rounded-full object-cover w-16 h-16 shadow-md"
+                    />
+                </a>
+                <div class="ml-3">
+                    <h2 class="font-bold text-2xl">Wikipedia</h2>
+                    <p><i>The Free Encyclopedia</i></p>
+                </div>
+            </div>
+            <div
+                class="flex items-center w-9/12 lg:w-3/12 md:w-4/12 shrink-0 block lg:flex md:flex"
+            >
+                <label class="relative block w-full">
+                    <span class="sr-only">Search</span>
+                    <i
+                        class="absolute inset-y-0 left-0 flex items-center pl-2 fa-solid fa-magnifying-glass text-slate-500"
+                    ></i>
+                    <input
+                        class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md my-5 lg:py-2 md:py-2 py-1 pl-9 pr-3 hover:shadow-lg shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
+                        placeholder="Search wikipedia"
+                        type="text"
+                        name="search"
+                    />
+                </label>
+                <button
+                    type="button"
+                    class="rounded-md bg-white block bg-white border border-slate-300 font-bold rounded-md lg:py-2 md:py-2 py-1 ml-1 px-3 text-slate-500 shadow-sm hover:shadow-lg shadow-sm focus:outline-none focus:ring-1 sm:text-sm"
+                >
+                    Search
+                </button>
+            </div>
+            <div
+                class="block lg:flex d:flex w-contain shrink-0 items-center gap-1"
+            >
+                <a
+                    href="create_account.html"
+                    class="link underline-offset-0 text-sm hover:text-blue-500 font-normal py-2 px-3 shadow-md rounded-lg bg-white"
+                    >Create account</a
+                >
+                <a
+                    href="login.html"
+                    class="link underline-offset-0 text-sm hover:text-blue-500 font-normal py-2 px-3 shadow-md rounded-lg bg-white"
+                    >Login</a
+                >
+            </div>
+        </header>
+        <br />
+        <div
+            class="w-9/12 block m-auto border-b-4 border-gray-500 flex justify-between text-sm font-normal"
+        >
+            <div class="py-1 flex gap-3">
+                <a href="index.html" class="text-blue-500 hover:text-blue-500"
+                    >Main page</a
+                >
+                <a
+                    href="https://en.wikipedia.org/wiki/Talk:Main_Page"
+                    class="text-black-500 hover:text-blue-500"
+                    >Talk</a
+                >
+            </div>
+            <div class="py-1 flex gap-3">
+                <a href="index.html" class="text-blue-500 hover:text-blue-500"
+                    >Read</a
+                >
+                <a
+                    href="view_source.html"
+                    class="text-black-500 hover:text-blue-500"
+                    >View Source</a
+                >
+                <a
+                    href="view_history.html"
+                    class="text-black-500 hover:text-blue-500"
+                    >View History</a
+                >
+            </div>
+        </div>
+        <main class="w-9/12 block mx-auto my-3">
+            <section class="block shadow-md rounded-sm bg-slate-200">
+                <h1 class="text-3xl font-normal text-center py-8">
+                    Welcome to
+                    <span class="align-center text-blue-500 font-semibold"
+                        >Wikipedia</span
+                    >
+                </h1>
+            </section>
+            <section class="grid gap-5 grid-col-1 lg:flex my-3 lg:items-start">
+                <div
+                    class="bg-slate-200 p-6 lg:py-4 lg:w-6/12 md:py-6 rounded-lg shadow-lg"
+                >
+                    <h2 class="font-bold text-slate-500 text-2xl">
+                        From today's features article
+                    </h2>
+                    <div class="mt-4">
+                        <figure class="py-2 float-left mr-6">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Smn_Cameron-SecofWar.jpg/183px-Smn_Cameron-SecofWar.jpg"
+                                alt="Simon Cameron"
+                                class="lg:h-40 lg:w-32 h-26 w-24 md:w-28 md:h-34 object-cover rounded shadow-md"
+                            />
+                            <small><i>Simon Cameron</i></small>
+                        </figure>
+                        <p class="text-justify text-sm">
+                            The 1867 U.S. Senate election in Pennsylvania, voted
+                            on by the state legislature, was held on January 15,
+                            1867. Simon Cameron was elected to the Senate for
+                            the third time; he had been chosen in 1845 and in
+                            1857. Cameron and Governor Andrew Curtin each led a
+                            faction of Republicans and had clashed as early as
+                            1855. Cameron tried to block Curtin from the party
+                            nomination for governor in 1860, while Curtin
+                            attempted to get Cameron excluded from Abraham
+                            Lincoln's cabinet; each failed. With the Republicans
+                            holding a majority in the 1867 legislature, the
+                            battle was for the party's endorsement, which
+                            Thaddeus Stevens and Galusha Grow also sought. The
+                            party caucus chose Cameron, who then defeated
+                            incumbent Edgar Cowan, the Democratic Party nominee.
+                            Cowan never again held office; Curtin later served
+                            in Congress as a Democrat. Cameron remained in the
+                            Senate until he resigned in 1877 to allow his son to
+                            take the seat. The Cameron political machine
+                            dominated Pennsylvania politics for a half century.
+                            (Full article...)
+                        </p>
+                        <br />
+                        <div class="text-end text-sm">
+                            <p class="grid gap-1">
+                                Recently featured:
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Interstate_90"
+                                    class="text-blue-500 hover:text-blue-800"
+                                    >Interstate 90</a
+                                >
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Baker_Street_robbery"
+                                    class="text-blue-500 hover:text-blue-800"
+                                    >Baker Street robbery</a
+                                >
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Rotating_locomotion_in_living_systems"
+                                    class="text-blue-500 hover:text-blue-800"
+                                    >Rotating locomotion in living systems</a
+                                >
+                            </p>
+                            <p
+                                class="grid gap-1 text-start mt-6 lg:flex lg:gap-3"
+                            >
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Wikipedia:Today%27s_featured_article/September_2023"
+                                    class="text-blue-500 hover:text-blue-800"
+                                    >Archive</a
+                                >
+                                <a
+                                    href="https://lists.wikimedia.org/postorius/lists/daily-article-l.lists.wikimedia.org/"
+                                    class="text-blue-500 hover:text-blue-800"
+                                    >By email</a
+                                >
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Wikipedia:Featured_articles"
+                                    class="text-blue-500 hover:text-blue-800"
+                                    >More featured articles</a
+                                >
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Wikipedia:About_Today%27s_featured_article"
+                                    class="text-blue-500 hover:text-blue-800"
+                                    >About</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-slate-200 p-6 lg:py-4 lg:w-6/12 md:py-6 rounded-lg shadow-lg"
+                >
+                    <h2 class="font-bold text-slate-500 text-2xl">
+                        In the news
+                    </h2>
+                    <div class="mt-4">
+                        <figure class="py-2 float-right ml-6 w-fit">
+                            <img
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Daniel_2023-09-09_1200Z.jpg/186px-Daniel_2023-09-09_1200Z.jpg"
+                                alt="Simon Cameron"
+                                class="lg:w-32 h-26 w-24 md:w-28 md:h-34 object-cover rounded shadow-md"
+                            />
+                            <small><i>Storm Daniel</i></small>
+                        </figure>
+                        <ul class="text-justify text-sm list-disc pl-3">
+                            <li>
+                                Storm Daniel (satellite image shown) causes
+                                flooding around the central Mediterranean and
+                                the collapse of two dams in Libya, leaving more
+                                than 5,300 people dead.
+                            </li>
+                            <li>
+                                An earthquake strikes Morocco, killing more than
+                                2,900 people.
+                            </li>
+                            <li>
+                                Tharman Shanmugaratnam is elected as the next
+                                president of Singapore.
+                            </li>
+                            <li>
+                                In Johannesburg, South Africa, a residential
+                                fire kills 77 people.
+                            </li>
+                        </ul>
+                        <div class="text-end text-sm md:mt-16 lg:mt-6">
+                            <p class="grid gap-1">
+                                Ongoing:
+                                <a
+                                    href="https://en.wikipedia.org/wiki/2023_Canadian_wildfires"
+                                    class="text-blue-500 hover:text-blue-800"
+                                    >Canadian wildfires</a
+                                >
+                                <a
+                                    href="https://en.wikipedia.org/wiki/2023_Nigerien_crisis"
+                                    class="text-blue-500 hover:text-blue-800"
+                                    >Nigerian Crisis</a
+                                >
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Russian_invasion_of_Ukraine"
+                                    class="text-blue-500 hover:text-blue-800"
+                                    >Russian invasion of Ukraine</a
+                                >
+                                <a
+                                    href="https://en.wikipedia.org/wiki/2023_Sudan_conflict"
+                                    class="text-blue-500 hover:text-blue-800"
+                                    >Sudan conflict</a
+                                >
+                            </p>
+                            <p
+                                class="grid gap-1 text-start mt-6 md:grid-cols-4 lg:grid lg:gap-y-3"
+                            >
+                                Recent deaths:
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Mike_Williams_(wide_receiver,_born_1987)"
+                                    class="text-blue-500 hover:text-blue-800"
+                                    >Mike Williams</a
+                                >
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Antonio_Galves"
+                                    class="text-blue-500 hover:text-blue-800"
+                                    >Antonio Galves</a
+                                >
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Margherita_Rinaldi"
+                                    class="text-blue-500 hover:text-blue-800"
+                                    >Margherita Rinaldi</a
+                                >
+                                <a
+                                    href="https://en.wikipedia.org/wiki/John_Cairney"
+                                    class="text-blue-500 hover:text-blue-800"
+                                    >John Cairney</a
+                                >
+                                <a
+                                    href="https://en.wikipedia.org/wiki/John_Cairney"
+                                    class="text-blue-500 hover:text-blue-800"
+                                    >John Cairney</a
+                                >
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Ian_Wilmut"
+                                    class="text-blue-500 hover:text-blue-800"
+                                    >Ian Wilmut</a
+                                >
+                                <a
+                                    href="https://en.wikipedia.org/wiki/Anatol_Ugorski"
+                                    class="text-blue-500 hover:text-blue-800"
+                                    >Anatol Ugorski</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <br />
+        <footer
+            class="border-t-4 border-gray-500 lg:mx-16 md:mx-8 mx-4 pt-2 pb-6 md:pb-12 justify-start lg:flex md:flex lg:gap-5 md:gap-5 gap-3 text-sm text-blue-500 block grid grid-cols-3"
+        >
+            <p>
+                <a
+                    href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy"
+                    class="hover:text-blue-800"
+                    >Privacy policy</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://en.wikipedia.org/wiki/Wikipedia:About"
+                    class="hover:text-blue-800"
+                    >About</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer"
+                    class="hover:text-blue-800"
+                    >Disclaimers</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us"
+                    class="hover:text-blue-800"
+                    >Contact</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Universal_Code_of_Conduct"
+                    class="hover:text-blue-800"
+                    >Code of Conduct</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://developer.wikimedia.org/"
+                    class="hover:text-blue-800"
+                    >Developers</a
+                >
+            </p>
+            <p>
+                <a
+                    href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement"
+                    class="hover:text-blue-800"
+                    >Cookies</a
+                >
+            </p>
+        </footer>
+    </body>
+</html>
